@@ -1,4 +1,9 @@
 // //  open and close nav
+import { navbar, footer } from "../components/headfoot.js";
+
+document.querySelector(".navigation").innerHTML = navbar();
+document.querySelector("footer").innerHTML = footer();
+
 let count = 0;
 document.querySelector("#navbar-toggle").addEventListener("click", () => {
   if (count % 2 == 0) {
